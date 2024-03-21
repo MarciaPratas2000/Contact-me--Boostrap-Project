@@ -19,10 +19,6 @@ h3 {
   margin: 0;
 }
 
-/* Homepage presentation section */
-.presentation-homepage {
-  padding: 5px;
-}
 
 h1 {
   font-size: 96px;
@@ -30,6 +26,7 @@ h1 {
 
 h2 {
   font-size: 48px;
+
 }
 
 h3 {
@@ -47,6 +44,18 @@ p {
 
 .container {
   max-width: 100%;
+  line-height: 1;
+}
+.container .border-none{
+  border: none;
+}
+
+.container h2 {
+  line-height: 0.2;
+}
+
+.presentation-homepage {
+  padding: 5px;
 }
 
 /* Navigation links */
@@ -150,16 +159,14 @@ p {
     text-align: center;
     width: 100%;
   }
-  .mb-4 {
+  .card-text .mb-2 ,.mb-2 {
     margin-bottom: 1rem !important;
-  }
-  .card-title .m-2 {
-    margin: 20rem 0 !important;
+    margin-top: 1rem !important; 
+
   }
   .card-title {
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 2rem;
   }
   .card-body a {
     display: block;
@@ -168,6 +175,10 @@ p {
     display: inline;
     padding: 0;
   }
+  .container h2 {
+    line-height: 1.5;
+  }
+  
 }
 
 @media (min-width: 768px) {
